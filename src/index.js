@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter } from 'react-router-dom';
+import {Provider} from 'react-redux';
+import {createStore, applyMiddleware} from 'redux';
+import Reducer from './redux/reducer';
+import ReduxThunk from 'redux-thunk'
+import 'bootstrap-css-only/css/bootstrap.min.css'; 
+import 'mdbreact/dist/css/mdb.css';
+
+const storeReducer = createStore(Reducer,{}, applyMiddleware(ReduxThunk))
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+
+  <Provider store = {storeReducer}>
+  <BrowserRouter>
+      <App />
+  </BrowserRouter>
+  </Provider>
+  ,
   document.getElementById('root')
 );
 

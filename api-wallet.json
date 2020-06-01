@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "exy",
+      "password": "asdf1234",
+      "name": "Exy"
+    },
+    {
+      "id": 2,
+      "username": "wartono",
+      "password": "asdf1234",
+      "name": "Wartono"
+    }
+  ],
+  "wallet": [
+    {
+      "history_wallet": [
+        {
+          "id": 1,
+          "tanggal": "2020-31-01",
+          "tipe": "CREDIT",
+          "nominal": 100000,
+          "keterangan": "-"
+        },
+        {
+          "id": 2,
+          "tanggal": "2020-31-01",
+          "tipe": "DEBIT",
+          "nominal": 10000,
+          "keterangan": "Beli Pulsa"
+        }
+      ],
+      "saldo_akhir": 200000,
+      "user_id": 1
+    },
+    {
+      "history_wallet": [
+        {
+          "id": 3,
+          "tanggal": "2020-31-01",
+          "tipe": "CREDIT",
+          "nominal": 200000,
+          "keterangan": "-"
+        },
+        {
+          "id": 4,
+          "tanggal": "2020-31-01",
+          "tipe": "DEBIT",
+          "nominal": 30000,
+          "keterangan": "Beli Token"
+        }
+      ],
+        "saldo_akhir": 170000,
+        "user_id": 2
+    }
+  ]
+}
